@@ -10,9 +10,7 @@ const Filters = ({ onFilter }) => {
       <Select onChange={(e) => onFilter(e.target.value)}>
         <MenuItem value="">All</MenuItem>
         {regions.map((region) => (
-          <MenuItem key={region} value={region}>
-            {region}
-          </MenuItem>
+          <MenuItem key={region} value={region}>{region}</MenuItem>
         ))}
       </Select>
     </FormControl>
